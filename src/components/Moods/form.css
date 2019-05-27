@@ -1,0 +1,10 @@
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    padding: 150px;
+    background: rgb(82, 80, 80);
+    border-radius: 10px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
+    filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
+}
