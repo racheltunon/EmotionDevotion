@@ -24,8 +24,14 @@ header {
 .logo {
   margin-left: 20px;
   max-height: 200px;
+  transition: transform 2s ease;
+
   
 
+}
+.logo:hover {
+  transform: rotate(3600deg) skewX(145deg);
+  /* transform: skewX(45deg); */
 }
 nav {
  
@@ -57,6 +63,10 @@ img {
   max-height: 80px;
   -webkit-filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
   filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
+
+}
+.moods img:hover {
+  transform: rotate(180deg);
 }
 .landingPage {
   
@@ -79,19 +89,19 @@ img {
 .verses {
   margin-left: 50px;
   margin: 40px;
-  border: solid rgb(189, 189, 189);
+  border: solid rgb(136, 136, 136);
   border-radius: 15px;
   box-shadow: 5px 10px 20px 1px rgb(29, 29, 29);
   background: rgb(77, 76, 76);
-  padding-left: 15px;
+  padding: 20px;
   font-family: 'Libre Baskerville', serif; 
-  width: 75vw;
+  width: 80vw;
   
 }
-h2 {
-  font-size: 24px;
+.scripture {
+  margin-top: 7px;
+  font-size: 20px;
   
-  padding: 3px;
 }
 
 h3 {
@@ -110,25 +120,46 @@ button {
   background: none;
   color: white;
   font-size: 30px;
-  font-family: 'Ramabhadra', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  outline: none;
 
 }
 .like {
+
 margin-bottom: 10px;
+
 display: flex;
 flex-direction: row;
 align-items: center;
-justify-content: space-evenly;
-width: 3vw;
+justify-content: space-between;
+width: 5vw;
 height: 4vh;
-font-family: 'Ramabhadra', sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 font-size: 25px;
 }
 .likeButton {
-  max-height: 24px;
-  -webkit-filter: drop-shadow(2px 1px 1px rgb(255, 255, 255));
-  filter: drop-shadow(2px 1px 1px rgb(255, 255, 255));
+  max-height: 23px;
 
+
+}
+.likeButton:active {
+  max-height: 30px;
+
+  color: red;
+} 
+.deleteButton {
+  display: flex;
+  float: right;
+  margin: 0;
+  
+  
+}
+.bookmarkButton {
+  max-height: 23px;
+}
+.bookmarkButton:active{
+  max-height: 25px;
 }
 .page {
   
@@ -137,6 +168,26 @@ font-size: 25px;
 
 }
 
+.bookmarkPage {
+  margin-left: 100px;
+}
+
+footer {
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-top: 15%;
+  width: 102%;
+  height: 20vh;
+  background: rgb(82, 80, 80);
+  bottom: 0;
+  
+
+  
+
+}
 
 
 

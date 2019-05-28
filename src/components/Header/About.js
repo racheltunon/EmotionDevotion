@@ -1,25 +1,23 @@
-import React, {Component} from "react";
+import React from "react";
+import Footer from "../Footer";
+import "../About/about.css"
+
+function About(){
+    return (
+        <div>
+        <section className="about">
+        <h1 className="aboutED animated bounce" >About Emotion Devotion</h1>
+        <p>Founded in 2019, Emotion Devotion has given people the opportunity to connect with God in a tight way, Yo. </p>
+        </section>
+        <Footer />
+        </div>
+    )
+}
 
 
 
 
-class Likes extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            loading: true, 
-            error: ""
-        };
-        // this.updateHome = this.updateHome.bind(this);
-    }
-  
-    
-  render(){
-      return(
-          <div>
-              <h1>About Emotion Devotion</h1>
-          </div>
-      )
-  }
-}   
-export default Likes;                                               
+
+
+
+export default About;                                               

@@ -19,11 +19,12 @@ class Add extends Component {
   }
 
   handleChange(e) {
-    this.setState({ [e.target.mood]: e.target.value });
+    this.setState({ [e.target.name]: e.target.value });
   }
+  
 
   render() {
-    console.log(this.state)
+  
     return (
       <div>
       <form className="form1"
@@ -34,16 +35,18 @@ class Add extends Component {
         onSubmit={e => {
           e.preventDefault();
           axios
-            .post("/api/verses", {
+            .post("/api/verses/", {
               mood: this.state.mood,
               scripture: this.state.scripture,
               verse: this.state.verse,
               version: this.state.version,
+              
             
             })
             .then(response => {
               console.log(response.data);
-              this.props.updateView("verses");
+              this.props.setVerses(response.data);
+              // this.props.updateView("verses");
             })
             .catch(error => {
               console.log(error);
@@ -52,14 +55,13 @@ class Add extends Component {
         }}
       > 
       
-        <input name="mood" onChange={this.handleChange} placeholder="Ex. happy" />
-        <input name="scripture" onChange={this.handleChange} placeholder="Ex. for God so loved the world.." />
+        <input className="moodInput" name="mood" onChange={this.handleChange} placeholder="Ex. happy" />
+        <input className="scriptureInput" name="scripture" onChange={this.handleChange} placeholder="Ex. for God so loved the world.." />
         <input name="verse" onChange={this.handleChange} placeholder="Ex. John 3:16.." />
         <input name="version" onChange={this.handleChange} placeholder="Ex. ESV.." />
-        <button onClick={() => this.state.view=== "cancel" ? "current" : ""}type="reset">Cancel</button>
-        <button onClick={() => this.state.view=== "submit" ? "current" : ""}type="submit">Submit</button>
+        <button className="submitButton" onClick={() => this.state.view=== "submit" ? "current" : ""}type="submit">SUBMIT</button>
       </form>
-
+      
       {this.state.view === "submit" ? (
        <Mood   />
       

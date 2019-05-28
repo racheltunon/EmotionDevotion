@@ -1,10 +1,71 @@
 form {
-    margin-top: 30px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 15px;
     margin-bottom: 40px;
     display: flex;
-    padding: 150px;
+    padding: 35px;
+    padding-top: 20px;
     background: rgb(82, 80, 80);
     border-radius: 10px;
     -webkit-filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
     filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
 }
+input {
+    background: rgb(167, 166, 166);
+    margin-top: 30px;
+    padding-left: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
+    filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    word-wrap: break-word;
+    
+    
+}
+.moodInput {
+    width: 200px;
+}
+.scriptureInput {
+    
+    width: 390px;
+   
+}
+.submitButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 50%;
+    font-size: 23px;
+    height: 45px;
+    width: 170px;
+    border-radius: 50px;
+    background-blend-mode: color;
+    background-image: linear-gradient(to right,blue, yellow, orange, red);
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(54, 54, 54));
+    filter: drop-shadow(-5px 5px 10px rgb(15, 15, 15));
+    font-family: 'Oswald', sans-serif;
+    font-weight: none;
+    color: rgb(71, 71, 71);
+}
+.submitButton:hover {
+    filter: none;
+}
+.cancelButton {
+    margin-left: 47%;
+    margin-top: 50px;
+    
+}
+.formButton {
+    margin-top: 60px;
+}
+    
+

@@ -3,7 +3,7 @@ import './App.css';
 import Moods from "./components/Header/Moods";
 import About from "./components/Header/About";
 import Boookmarks from "./components/Header/Bookmarks";
-import logo from "./EmotionDevotion.png";
+import logo from "./Untitled_Artwork 13.png";
 
 
 
